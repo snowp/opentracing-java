@@ -57,7 +57,7 @@ public class ThreadLocalActiveSpan implements ActiveSpan {
     }
 
     @Override
-    public Continuation capture() {
+    public ActiveSpan.Continuation capture() {
         return new ThreadLocalActiveSpan.Continuation();
     }
 
